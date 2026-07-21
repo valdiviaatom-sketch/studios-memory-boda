@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invitación de Boda</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<!-- AUDIO -->
+
+<audio id="musica" loop>
+
+    <source src="music/cancion.mp3" type="audio/mpeg">
+
+</audio>
+<!-- BOTÓN MÚSICA -->
+
+<div class="btn-musica" id="btnMusica">
+
+    <i class="fa-solid fa-music"></i>
+
+</div>
+
+<body>
+
+<!-- PRELOADER -->
+
+<div id="preloader">
+
+    <div class="loader-contenido">
+
+        <h1>Juan Carlos <span class="ampersand">&</span> Yamile</h1>
+
+        <p>Cargando nuestra historia...</p>
+
+        <div class="loader">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="contenido">
+
+        <h3>¡Nos Casamos!</h3>
+
+        <h1>Juan Carlos <span class="ampersand">&</span> Yamile</h1>
+
+        <p>21 de Agosto de 2026</p>
+
+        <div class="icono-entrar">
+    <i class="fa-solid fa-angles-down"></i>
+</div>
+
+<button id="entrar">Entrar</button>
+
+    </div>
+
+</section>
+
+<!-- ================= INVITACION ================= -->
+
+<section id="invitacion">
+
+    <!-- MENU -->
+
+<nav class="menu">
+
+    <a href="#bienvenida">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <a href="#contador">
+        <i class="fa-regular fa-clock"></i>
+    </a>
+
+    <a href="#galeria">
+        <i class="fa-regular fa-images"></i>
+    </a>
+
+    <a href="#ubicacion">
+        <i class="fa-solid fa-location-dot"></i>
+    </a>
+
+    <a href="#agenda">
+        <i class="fa-solid fa-calendar-days"></i>
+    </a>
+
+    <a href="#confirmacion">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#regalos">
+        <i class="fa-solid fa-gift"></i>
+    </a>
+
+</nav>
+
+    <!-- BIENVENIDA -->
+
+    <section id="bienvenida" class="bienvenida">
+
+        <span class="icono">🤍</span>
+
+        <h2>Con la bendición de Dios y nuestros padres</h2>
+
+        <p>
+            Nos llena de alegría invitarte a compartir uno de los días
+            más importantes de nuestras vidas.
+        </p>
+
+        <h3>Juan Carlos <span class="ampersand">&</span> Yamile</h3>
+
+    </section>
+
+    <!-- CONTADOR -->
+
+    <section id="contador" class="contador">
+
+        <h2>Faltan</h2>
+
+        <div class="tiempo">
+
+            <div class="caja">
+
+                <span id="dias">00</span>
+
+                <p>Días</p>
+
+            </div>
+
+            <div class="caja">
+
+                <span id="horas">00</span>
+
+                <p>Horas</p>
+
+            </div>
+
+            <div class="caja">
+
+                <span id="minutos">00</span>
+
+                <p>Minutos</p>
+
+            </div>
+
+            <div class="caja">
+
+                <span id="segundos">00</span>
+
+                <p>Segundos</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section id="galeria" class="galeria">
+
+        <h2>Nuestra Historia en Fotos</h2>
+
+        <div class="grid-galeria">
+
+            <img src="img/foto1.jpg" alt="">
+            <img src="img/foto2.jpg" alt="">
+            <img src="img/foto3.jpg" alt="">
+            <img src="img/foto4.jpg" alt="">
+            <img src="img/foto5.jpg" alt="">
+            <img src="img/foto6.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- UBICACION -->
+
+    <section id="ubicacion" class="ubicacion" data-aos="fade-up">
+
+        <h2>Ceremonia & Recepción</h2>
+
+        <p class="subtitulo">
+
+            Será un honor compartir este día contigo.
+
+        </p>
+
+        <!-- CEREMONIA -->
+
+        <div class="lugar">
+
+            <img src="img/catedral iglesia.jpg" alt="Iglesia">
+
+            <div class="info">
+
+                <i class="fa-solid fa-church"></i>
+
+                <h3>Ceremonia</h3>
+
+                <p>Iglesia Católica San Julian</p>
+
+                <p class="direccion" id="dir1">
+
+                    Al frente de la plaza principal de San Julian
+
+                </p>
+
+                <div class="botones">
+
+                    <a href="https://maps.app.goo.gl/GWaZZ4UHCmzzD16c7" target="_blank">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        como llegar
+
+                    </a>
+
+                    <button onclick="copiarDireccion('dir1')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        Copiar dirección
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RECEPCION -->
+
+        <div class="lugar">
+
+            <img src="img/salon san julian.jpg" alt="Salón">
+
+            <div class="info">
+
+                <i class="fa-solid fa-champagne-glasses"></i>
+
+                <h3>Recepción</h3>
+
+                <p>Salón de Eventos San Julian</p>
+
+                <p class="direccion" id="dir2">
+
+                   Cerca de la carretera a lado de pollos Dabows
+            
+
+                </p>
+
+                <div class="botones">
+
+                    <a href="https://maps.app.goo.gl/JqjkmqRV7ujU5YjS9" target="_blank">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        como llegar
+
+                    </a>
+
+                    <button onclick="copiarDireccion('dir2')">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        Copiar dirección
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+<!-- ================= AGENDA ================= -->
+
+<section id="agenda" class="agenda" data-aos="fade-up">
+
+    <h2>Itinerario del Evento</h2>
+
+    <div class="timeline">
+
+        <div class="evento">
+
+            <div class="hora">16:00</div>
+
+            <div class="evento-contenido">
+
+                <i class="fa-solid fa-church"></i>
+
+                <h3>Ceremonia</h3>
+
+                <p>Iglesia San José</p>
+
+            </div>
+
+        </div>
+
+        <div class="evento">
+
+            <div class="hora">18:00</div>
+
+            <div class="evento-contenido">
+
+                <i class="fa-solid fa-champagne-glasses"></i>
+
+                <h3>Recepción</h3>
+
+                <p>Salón Los Jardines</p>
+
+            </div>
+
+        </div>
+
+        <div class="evento">
+
+            <div class="hora">19:30</div>
+
+            <div class="evento-contenido">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <h3>Cena</h3>
+
+                <p>Disfrutemos juntos.</p>
+
+            </div>
+
+        </div>
+
+        <div class="evento">
+
+            <div class="hora">21:00</div>
+
+            <div class="evento-contenido">
+
+                <i class="fa-solid fa-music"></i>
+
+                <h3>Fiesta</h3>
+
+                <p>¡A bailar!</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONFIRMACIÓN ================= -->
+
+<section id="confirmacion" class="confirmacion" data-aos="fade-up">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    <h2>Confirma tu asistencia</h2>
+
+    <p>
+        Tu presencia será el mejor regalo para nosotros.
+        Agradecemos confirmar tu asistencia.
+    </p>
+
+    <a
+        href="https://wa.me/59176078971?text=Hola%20Daniel%20y%20María,%20confirmo%20mi%20asistencia%20a%20su%20boda.%20💍"
+        target="_blank"
+        class="btn-whatsapp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        Confirmar Asistencia
+
+    </a>
+
+</section>
+<!-- ================= LLUVIA DE SOBRES ================= -->
+
+<section id="regalos" class="regalos" data-aos="fade-up">
+
+    <i class="fa-solid fa-gift icono-regalo"></i>
+
+    <h2>Mesa de Regalos</h2>
+
+    <p class="texto-regalo">
+        El mejor regalo será contar con tu presencia.
+        Si deseas tener un detalle con nosotros,
+        agradecemos tu lluvia de sobres.
+    </p>
+
+    <button id="mostrarCuenta" class="btn-regalo">
+
+        <i class="fa-solid fa-envelope-open"></i>
+
+        Ver información
+
+    </button>
+
+    <div id="cuenta" class="cuenta">
+
+        <h3>💌 Lluvia de Sobres</h3>
+
+        <p>
+            Durante la recepción encontrarás un espacio
+            destinado para dejar tu sobre.
+        </p>
+
+    </div>
+
+</section>
+</section> <!-- FIN DE INVITACION -->
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="cerrar">&times;</span>
+
+    <span class="anterior">&#10094;</span>
+
+    <img id="imagenGrande">
+
+    <span class="siguiente">&#10095;</span>
+
+</div>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="cerrar">&times;</span>
+
+    <span class="anterior">&#10094;</span>
+
+    <img id="imagenGrande" src="" alt="">
+
+    <span class="siguiente">&#10095;</span>
+
+</div>
+
+<!-- BOTÓN SUBIR -->
+
+<button id="subir" title="Volver arriba">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- BOTÓN WHATSAPP STUDIOS MEMORY -->
+
+<a 
+href="https://wa.me/+59176847462?text=Hola%20Studios%20Memory,%20quiero%20información%20sobre%20sus%20servicios%20de%20invitaciones."
+class="whatsapp-servicio"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<span>
+    Servicio by<br>
+    <strong>Studios Memory</strong>
+</span>
+
+</a>
