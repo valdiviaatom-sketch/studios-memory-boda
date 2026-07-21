@@ -210,60 +210,7 @@ btnMusica.addEventListener("click", ()=>{
 
 });
 
-//================ PÉTALOS =================//
 
-const contenedorPetalos = document.getElementById("petalos");
-
-function crearPetalo(){
-
-    const petalo = document.createElement("div");
-
-    petalo.classList.add("petalo");
-
-    petalo.innerHTML = "🌸";
-
-    petalo.style.left = Math.random()*100+"vw";
-
-    petalo.style.animationDuration =
-    (6 + Math.random()*6)+"s";
-
-    petalo.style.fontSize =
-    (18 + Math.random()*20)+"px";
-
-    contenedorPetalos.appendChild(petalo);
-
-    setTimeout(()=>{
-
-        petalo.remove();
-
-    },12000);
-
-}
-
-setInterval(crearPetalo,500);
-
-//================ REGALOS =================//
-
-const botonCuenta = document.getElementById("mostrarCuenta");
-const cuenta = document.getElementById("cuenta");
-
-botonCuenta.addEventListener("click",()=>{
-
-    if(cuenta.style.display==="block"){
-
-        cuenta.style.display="none";
-
-        botonCuenta.innerHTML='<i class="fa-solid fa-envelope-open"></i> Ver información';
-
-    }else{
-
-        cuenta.style.display="block";
-
-        botonCuenta.innerHTML='<i class="fa-solid fa-eye-slash"></i> Ocultar información';
-
-    }
-
-});
 //================ PRELOADER =================//
 
 window.addEventListener("load",()=>{
