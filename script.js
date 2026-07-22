@@ -84,7 +84,7 @@ imagenes.forEach((imagen, indice)=>{
         
         setTimeout(()=>{
 
-    imagenGrande.style.transform="scale(1)";
+    imagenGrande.style.transform="scale(.8)";
 
 },10);
 
@@ -100,7 +100,7 @@ function mostrarImagen(){
 
 cerrar.addEventListener("click", ()=>{
 
-    imagenGrande.style.transform="scale(.8)";
+    imagenGrande.style.transform="scale(1)";
 
     setTimeout(()=>{
 
@@ -136,52 +136,45 @@ anterior.addEventListener("click", ()=>{
     mostrarImagen();
 
 });
-document.addEventListener("keydown",(e)=>{
+document.addEventListener("keydown", (e) => {
 
-    if(e.key==="Escape"){
+    if (lightbox.style.display !== "flex") return;
 
-        imagenGrande.style.transform="scale(.8)";
+    if (e.key === "Escape") {
 
-        setTimeout(()=>{
+        imagenGrande.style.transform = "scale(.8)";
 
-            lightbox.style.display="none";
+        setTimeout(() => {
 
-        },200);
+            lightbox.style.display = "none";
+
+        }, 200);
 
     }
-    document.addEventListener("keydown",(e)=>{
 
-    if(lightbox.style.display!="flex") return;
-
-    if(e.key==="ArrowRight"){
+    if (e.key === "ArrowRight") {
 
         indiceActual++;
 
-        if(indiceActual>=imagenes.length){
-
-            indiceActual=0;
-
+        if (indiceActual >= imagenes.length) {
+            indiceActual = 0;
         }
 
         mostrarImagen();
 
     }
 
-    if(e.key==="ArrowLeft"){
+    if (e.key === "ArrowLeft") {
 
         indiceActual--;
 
-        if(indiceActual<0){
-
-            indiceActual=imagenes.length-1;
-
+        if (indiceActual < 0) {
+            indiceActual = imagenes.length - 1;
         }
 
         mostrarImagen();
 
     }
-
-});
 
 });
 const musica = document.getElementById("musica");
